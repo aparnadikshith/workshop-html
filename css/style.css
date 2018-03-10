@@ -1,0 +1,156 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+h1, h2 {
+	font-size: 48px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 200;
+
+}
+
+.content {
+	text-align: center;
+	color: white;
+	background-color: seagreen;
+	background-image: url(../images/hero1.jpg);
+	background-size:  cover;  
+	padding: 100px 0px;
+}
+
+.content h1 {
+	margin-top: 0px;
+}
+
+nav {
+	background-color: black;
+	text-align: center;
+	padding: 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none; 
+	justify-content: space-between;
+ 	width: 80%;
+ 	margin: 0 auto;
+ 	padding: 0;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+}
+
+nav li
+{
+	margin-top: 30px;
+}
+
+.outer-container {
+	background-color: tomato;
+}
+
+.inner-container {
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.container {
+	width: 80%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.box {
+	flex-grow: 0;
+	flex-basis: 33.33%;
+	padding: 10px;
+
+}
+
+.box img{
+	height: 50px;
+	width: auto;
+
+}
+
+@media (max-width: 650px) {
+	.box {
+		flex-basis: 100%;
+	}
+}
+
+.media {
+	padding: 60px 0;
+}
+.media-left {
+	flex-basis: 50%;
+	text-align: left;
+	padding-right: 30px;
+
+}
+
+.media-right {
+	flex-basis: 50%;
+}
+
+.media-right img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 800px) {
+	.media-left, .media-right {
+		flex-basis: 100%;
+	}
+}
+
+.review {
+	text-align: center;
+	padding: 50px;
+	background-color: orange;
+}
+
+.review p {
+	font-style: italic;
+}
+
+.author {
+	width: 300px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	text-align: left;
+}
+
+.author img {
+	float: left;
+	border-radius: 50%;
+	width: 120px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.last-section{
+	text-align: center;
+	padding: 60px 0;
+}
